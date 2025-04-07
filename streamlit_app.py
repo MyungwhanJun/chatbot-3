@@ -15,7 +15,7 @@ st.markdown("""
 """)
 
 
-### 📁 폴더: pages/1_홈.py
+### 📁 폴더: pages/1_🏠_홈.py
 import streamlit as st
 
 st.title("🏠 산티아고 순례길이란?")
@@ -29,7 +29,7 @@ st.markdown("""
 """)
 
 
-### 📁 pages/2_🗺%ef%b8%8f_커스안내.py
+### 📁 pages/2_🗺️_코스안내.py
 import streamlit as st
 
 st.title("🗺️ 주요 코스 안내")
@@ -75,7 +75,7 @@ st.markdown("""
 """)
 
 
-### 📁 pages/4_💬_책보사달.py
+### 📁 pages/4_💬_챗봇상담.py
 import streamlit as st
 from openai import OpenAI
 
@@ -135,26 +135,3 @@ if uploaded_files:
     for file in uploaded_files:
         st.image(file, use_column_width=True)
         st.caption(f"{file.name}")
-```
-
----
-
-### 📁 .streamlit/config.toml (선택사항)
-```toml
-[theme]
-primaryColor = "#FFD700"
-backgroundColor = "#ffffff"
-secondaryBackgroundColor = "#f0f2f6"
-textColor = "#000000"
-font = "sans serif"
-
-[server]
-runOnSave = true
-```
-
----
-
-### 📄 requirements.txt
-```
-streamlit
-openai
